@@ -1,5 +1,5 @@
 ## Summary
-In this section, we explored JSX and the differences between it and HTML. For example:
+In this section, we explored JSX and some of the differences with and HTML. For example:
 
 - Styling in JSX
 - ClassName Vs Class
