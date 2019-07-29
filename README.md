@@ -1,10 +1,13 @@
 ## Summary
-This is the beginning of learning React. The idea behind deleting everything from the src folder is to start from the bottom-up to learn properly how every piece works together. At the moment we started by:
+In this section, we explored JSX and the differences between it and HTML. For example:
 
- - `npm create-react-app myjsx`
- - Deleting everything from the src folder.
- - Creating an index.js inside the src folder.
- - Import the React and ReactDom libraries.
- - Create react component (Function or Class).
- - Take React Component and show it to the screen.
+- Styling in JSX
+- ClassName Vs Class
+- htmlFor vs for (labels)
+- Referencing JS Variables 
+- Property Names
 
+## What is JSX?
+JSX stands for JavaScript XML. JSX is a preprocessor step that adds XML syntax to JavaScript. Babel is used to process that JSX as well. No browser natively understands what JSX is, so before the JSX is sent to the browser it gets converted into normal looking JS code. Try it!
+
+- `https://babeljs.io/repl`
