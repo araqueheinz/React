@@ -1,51 +1,32 @@
-// Import the React and ReactDom libraries
+// Import the React and ReactDOM libraries
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import faker library
-import faker from 'faker';
+import ReactDOM from 'react-dom'
 
-//Import CommentDetail
-import CommentDetail from './CommentDetail'
-//Import ApprovalCard
-import ApprovalCard from './ApprovalCard'
+//Import Libraries
 
-// Create react component (Function or Class)
-const App = () => {
-  return (
-    <div className="ui container comments">
-      <ApprovalCard>
-        <div>
-          <h4>Warning!</h4>
-          Are you sure you want to do this? 
-        </div>
-      </ApprovalCard>
-      <ApprovalCard> 
-        <CommentDetail
-          avatar={faker.image.avatar()}
-          author="Sam"
-          timeAgo="Yesterday at 3:20pm"
-          comment="Nice bro!"
-        />
-      </ApprovalCard>
-      <ApprovalCard> 
-        <CommentDetail
-          avatar={faker.image.avatar()}
-          author="Juan"
-          timeAgo="Yesterday at 1:15pm"
-          comment="I don't share your opinion!"
-        />
-      </ApprovalCard> 
-      <ApprovalCard> 
-        <CommentDetail 
-          avatar={faker.image.avatar()}
-          author="Fonda"
-          timeAgo="Today at 9:00am"
-          comment="It made me laugh :D"
-        />
-      </ApprovalCard> 
-    </div>
-  );
-};
+// Create a react component (Functional)
 
-// Take React Component and show it to the screen
+/*
+  const App = () => {
+    window.navigator.geolocation.getCurrentPosition(
+      (position) => console.log(position), 
+      (err) => console.log(err) 
+    );
+    return <div>Latitude: </div>
+  }
+*/
+
+// Create a react component (Class Based)
+class App extends React.Component {
+  
+  render() {
+    window.navigator.geolocation.getCurrentPosition(
+      (position) => console.log(position), 
+      (err) => console.log(err) 
+    );
+    return <div>Latitude: </div>
+  }
+}
+
+// Take the react component then show it on the screen
 ReactDOM.render(<App/>, document.querySelector('#root'));
