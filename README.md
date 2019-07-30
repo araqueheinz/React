@@ -34,5 +34,3 @@ We are going to build a project to help us better understand the main difference
   );
   ```
 
-
-## Conclusion
