@@ -1,10 +1,12 @@
+# Intro to Props
+
 ## Summary
 In this section, I'm introduced to props. I'm going to learn 3 significant concepts, **Component Nesting**, **Component Reusability**, and **Component Configuration**. These are the foundations of the React eco-system.
 
 ## What are props?
 **Props or Properties** is a system for passing data from a **Parent** component to a **Child** component. Most components can be customized when they are created, with different parameters or **Props**(Properties). A **Child** can not pass data back up to the parent through the **Prop** system directly.
 
-## Project Ahead
+## Project Ahead (Summer & Winter App) - Part 4 out 4
 We are going to generate a list of comments. Similar to a news article, comments on social media, or a blog post using **Component Nesting**, **Component Reusability**, and **Component Configuration**.
 
 ### Tools
