@@ -1,15 +1,7 @@
 ## Summary
-A component is either a **Function** or a **Class**. So far we've seen what **Functional Components** is and we've only seen how to produce some HTML to show to the user, but not handle any feedback or updates. In this section we are going to talk about **Class Based Components**, how to use them to manage feedback from the user and update the content. 
-
-### When to use **Functional Components**?
-We use functional components when we are trying to show simple content to the user without a lot of logic behind it.
-
-### When to use **Class Based Components**?
-Used when complex logic is involved, like responding to the user's inputs, make network requests, etc.
-### Benefits:
-- Easier code organization.
-- Can use 'State' system.
-- Understands life-cycle events.
+In the last section we refactor our project and started using **Class Based Components**. In this section we are going to start introducing the idea of **State** in our APP.
+### What is State?
+Is a JavaScript object that contains some amount of data that is relevant to a singular component. **State** is an object that represents the parts of the app that can change. Each component can maintain its own state, which lives in an object called this.state. If we want a simple component to update itself, we will update the state. The state object **CAN ONLY BE UPDATED** using the function `setState`.
 ## Project Ahead
 We are going to build a project to help us better understand the main differences between **Functional Components** and **Class Based Components**. We are also going to learn about **State** and **Life-cycle events** along the way. It is going to be a simple application that is going to detect what season is currently experiencing at the moment.
 ### Tasks:

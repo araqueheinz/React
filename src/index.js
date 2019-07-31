@@ -2,29 +2,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-//Import Libraries
-
-// Create a react component (Functional)
-
-/*
-  const App = () => {
-    window.navigator.geolocation.getCurrentPosition(
-      (position) => console.log(position), 
-      (err) => console.log(err) 
-    );
-    return <div>Latitude: </div>
-  }
-*/
-
 // Create a react component (Class Based)
 class App extends React.Component {
-  
-  render() {
+  // Old Way
+  constructor(props) {
+    super(props)
+
+    this.state = { lat: null, errorMessage: '' };
+
     window.navigator.geolocation.getCurrentPosition(
-      (position) => console.log(position), 
-      (err) => console.log(err) 
+      (position) => {
+        // To update the state object we called setSate
+        this.setState({ lat: position.coords.latitude });
+
+        // !! We never want to do a direct assignment to our state object, Example:
+        // this.state.lat = position.coords.latitude
+      },
+      (err) => {
+        this.setState({ errorMessage: err.message })
+      } 
     );
-    return <div>Latitude: </div>
+  };
+
+  // Render is a requirement of REACT
+  render() {
+    
+    // This right here is refer as Conditional rendering
+    if (this.state.errorMessage && !this.state.lat) {
+      return <div>Error: {this.state.errorMessage}</div>;
+    }
+
+    if (!this.state.errorMessage && this.state.lat) {
+      return <div>Latitude: {this.state.lat}</div>;
+    }
+
+    return <div>Loading!</div>;
   }
 }
 
