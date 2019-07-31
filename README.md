@@ -1,3 +1,5 @@
+# Intro to JSX
+
 ## Summary
 In this section, we explored JSX and some of the differences with HTML. For example:
 
