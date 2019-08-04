@@ -1,9 +1,12 @@
-# Building List of Records
+# Refactoring, Refs, Adding Style & CSS
 
 ## Summary
+In this section we are going t take the **Search & Show** project and we are going to add some styling, utilizing **CSS Grid**. Also, we are going to learn about **Accessing the DOM with Refs**.
 
+### What are React Refs?
+They are a system to give you direct access to a single dom element that is rendered by a component. In the typical React dataflow, props are the only way that parent components interact with their children. ... The child to be modified could be an instance of a React component, or it could be a DOM element. 
 
-## Project Ahead (Search & Show) - Part 3 out 3 (Version 2)
+## Project Ahead (Search & Show) - Part 3 out 3 (Version 2) FINAL.
 We are going to build an app that consists in having a text input (search bar) in the middle of the screen. The user will be able to type some text in the input, then press enter. We're going to do a search or a request to an outside API that is going to find images that matches whatever the user typed. 
 
 ### Tasks:
@@ -31,13 +34,5 @@ We are going to build an app that consists in having a text input (search bar) i
     },
   });
 ```
-
-## Conclusion
-We created 3 different components and an Axios API file that we customized for our needs. The application takes the user query in the **Search Bar Component**, It then passes that information back up to the parent **App.js**. The App component is in charged of making the API call to Unsplash.com using a customized version we created. The image data we received from Unsplash we pass it down to the child component **Image list**, where we use the **Map Array Helper Method** to crate render a list of images back to the screen. We use destructuring to stop reaping ourselves 
-- // Destructuring images.description, image.id, image.urls
-```
- const images = props.images.map(({ description, id, urls }) => {
-    return <img alt={ description } key={ id } src={ urls.regular }/>
-  });
-```
-Lastly, we gave each of our new image element tags a key, so React can identify them faster therefore giving it a little boost on performance. 
+ ## Conclusion
+After finishing the core functionality of our App, we want to improve the way the images are being displayed using **Grid** in our CSS file. Instead of having a long list of big images, we are going to allocate them in a somewhat tile system like Pinterest.com. To do that we created an **Image Card Component** that will be creating **Refs** for every *img tag element* we created, so we can access the heigh of each image before it reaches the DOM. Using the heigh data, we are able to calculate how many **Spans**(grid-Row-End) are needed for each individual image, so every image is displayed properly.
