@@ -1,9 +1,9 @@
 # Building List of Records
 
 ## Summary
-In this section we are going to use an **Map Array Helper Method** to print out the list of images we found by doing a search. Also, we are going to talk about what is **Key** and why are we supposed to define one whenever we are building a **list of components**.
 
-## Project Ahead (Search & Show) - Part 3 out 3 (Version 1)
+
+## Project Ahead (Search & Show) - Part 3 out 3 (Version 2)
 We are going to build an app that consists in having a text input (search bar) in the middle of the screen. The user will be able to type some text in the input, then press enter. We're going to do a search or a request to an outside API that is going to find images that matches whatever the user typed. 
 
 ### Tasks:
