@@ -1,16 +1,9 @@
-# Making API Requests
+# Building List of Records
 
 ## Summary
-In this section we are going to learn how to load some data into our app. We are going to learn the differences between the 3rd party package **Axio** vs **Fetch**.
+In this section we are going to use an **Map Array Helper Method** to print out the list of images we found by doing a search. Also, we are going to talk about what is **Key** and why are we supposed to define one whenever we are building a **list of components**.
 
-### What is Axios?
-Axios is a standalone third party package that is frequently used in React apps for managing network requests and fetching some amount of data. It is a promise-based HTTP client that works both in the browser and in a node.js environment. It basically provides a single API for dealing with XMLHttpRequest s and node's http interface.
-
-### What is fetch?
-Fetch is a singular function that it is built into almost all modern browsers. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.
-
-
-## Project Ahead (Search & Show) - Part 2 out 3 (Version 1)
+## Project Ahead (Search & Show) - Part 3 out 3 (Version 1)
 We are going to build an app that consists in having a text input (search bar) in the middle of the screen. The user will be able to type some text in the input, then press enter. We're going to do a search or a request to an outside API that is going to find images that matches whatever the user typed. 
 
 ### Tasks:
@@ -38,3 +31,13 @@ We are going to build an app that consists in having a text input (search bar) i
     },
   });
 ```
+
+## Conclusion
+We created 3 different components and an Axios API file that we customized for our needs. The application takes the user query in the **Search Bar Component**, It then passes that information back up to the parent **App.js**. The App component is in charged of making the API call to Unsplash.com using a customized version we created. The image data we received from Unsplash we pass it down to the child component **Image list**, where we use the **Map Array Helper Method** to crate render a list of images back to the screen. We use destructuring to stop reaping ourselves 
+- // Destructuring images.description, image.id, image.urls
+```
+ const images = props.images.map(({ description, id, urls }) => {
+    return <img alt={ description } key={ id } src={ urls.regular }/>
+  });
+```
+Lastly, we gave each of our new image element tags a key, so React can identify them faster therefore giving it a little boost on performance. 
