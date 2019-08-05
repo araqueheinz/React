@@ -12,7 +12,7 @@ Used when complex logic is involved, like responding to the user's inputs, make 
 - Easier code organization.
 - Can use 'State' system.
 - Understands life-cycle events.
-## Project Ahead (Summer & Winter App) - Part 1 out 3
+## Project Ahead (Summer & Winter App) - Part 1 out of 3
 We are going to build a project to help us better understand the main differences between **Functional Components** and **Class Based Components**. We are also going to learn about **State** and **Life-cycle events** along the way. It is going to be a simple application that is going to detect what season is currently experiencing at the moment.
 ### Tasks:
 - Locate the user's physical location.
