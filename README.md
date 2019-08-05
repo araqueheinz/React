@@ -4,7 +4,7 @@
 In the last section we refactor our project and started using **Class Based Components**. In this section we are going to start introducing the idea of **State** in our APP.
 ### What is State?
 Is a JavaScript object that contains some amount of data that is relevant to a singular component. **State** is an object that represents the parts of the app that can change. Each component can maintain its own state, which lives in an object called this.state. If we want a simple component to update itself, we will update the state. The state object **CAN ONLY BE UPDATED** using the function `setState`.
-## Project Ahead (Summer & Winter App) - Part 2 out 3
+## Project Ahead (Summer & Winter App) - Part 2 out of 3
 We are going to build a project to help us better understand the main differences between **Functional Components** and **Class Based Components**. We are also going to learn about **State** and **Life-cycle events** along the way. It is going to be a simple application that is going to detect what season is currently experiencing at the moment.
 ### Tasks:
 - Locate the user's physical location.
