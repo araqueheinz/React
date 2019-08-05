@@ -4,7 +4,7 @@
 In this section we are going to build a YouTube mock-up application to reenforce our previous acquired knowledge all together. 
 
 
-## Project Ahead (YouTube Browser App) - Part 1 out 1 DONE
+## Project Ahead (YouTube Browser App) - Part 1 out of 1 FINAL
 We are going to have a **Search Bar** on the top of the page. The user is going to enter some search term, then hit enter key which is going to trigger a search request over to the **YouTube public free API**. Then, we are going to display the returning list of matching videos on browser. The user can click on one of these videos and the app will feature the video in the center of the screen. We will also show them a title and a description of the video as well. 
 
 ### Tasks:
