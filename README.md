@@ -9,7 +9,7 @@ Is one that takes its current value through props and notifies changes through c
 ### What is an Uncontrolled Component?
 Is where the form data is handled by the DOM itself, instead of writing an event handler for every state update, you can use a ref to get form values from the DOM.
 
-## Project Ahead (Search & Show) - Part 1 out 3 (Version 1)
+## Project Ahead (Search & Show) - Part 1 out of 3 (Version 1)
 We are going to build an app that consists in having a text input (search bar) in the middle of the screen. The user will be able to type some text in the input, then press enter. We're going to do a search or a request to an outside API that is going to find images that matches whatever the user typed. 
 
 ### Tasks:
