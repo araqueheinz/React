@@ -68,5 +68,3 @@ Is a function that gets called with every action we dispatch. It has the ability
 - Axios: `npm i axios`
 - Redux-Thunk: `npm i redux-thunk`
 - Semantic UI: We are going to use a link to a publicly hosted version of the Semantic UI CSS file https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css instead of downloading it. In the /public/index.html we are going to add a "Link" tag. Example: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />`
-
-## Conclusion
