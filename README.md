@@ -1,41 +1,41 @@
-# Async Actions with Redux-thunk 
+# Redux Store Design 
 
 ## Summary
-In this section we are going to build an application similar to a blog post. The goal behind it, is to keep practicing with redux and react-redux on top of learning a new middleware called redux-thunk. Also, we are going to learn how to make API calls using redux. 
+In this section we are going to learn more in depth about reducers and how to make api request.
 
-### Some rules of Action Creators(Redux)
-- Action Creator must return action objects
-- Actions must have a `type` property
-- Actions can optionally have a `payload`.
 
-### Redux Cycle
-- Action Creator
-- Action
-- Dispatch
-- Reducers
-- State
+### Rules of Reducers
+- Must return any value besides 'undefined'
+- Produces 'state', or data to be used inside of your app using only previous state and the action (reducers are pure).
+- Must not return reach 'out of itself' to decide what value to return
+- Must not mutate its input 'state' argument using the **BAD WAY**
 
-### What is Redux-Thunk?
-Is a middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met.
+The **BAD WAY** mutates the elements of an Array or the properties of an Object, on the other hand, the **GOOD WAY** generates or creates a new Array or Object, therefore creating a new state object, not mutating the previous one.
 
-### What is a Redux-Thunk middleware?
-Is a function that gets called with every action we dispatch. It has the ability to Stop, Modify, or otherwise mess with actions. One of the most popular use for this middleware is for dealing with **async** actions.
+### **GOOD WAY** of mutating state inside the reducer:
+#### Arrays
+- Remove Element: `state.filter(element => element !== 'hi')`
+- Add Element: `[...state, 'h1']`
+- Replace element: `state.map(element => element ==='hi' ? 'bye' : element)`
+#### Objects
+- Update Property: `{ ...state, name: 'Sam' }`
+- Adding Property: `{ ...state, age: 30 }`
+- Remove Property: `{ ...state, age: undefined }`
+- Delete Property: `_.omit(state, 'age')`
 
-### Some rules of Redux-Thunk middleware
-- Actions Creator can return action objects or functions
-- If an action object gets returned, it must have a `type`
-- If an action object gets returned, it can optionally have a `payload`.
+### **BAD WAY** of mutating state inside the reducer:
+#### Arrays
+- Remove Element: `state.pop()`
+- Add Element: `state.push('hi')`
+- Replace Element: `state[0] = 'h1'`
+#### Objects
+- Update Property: `state.name = 'Sam'`
+- Adding Property: `state.age = 30`
+- Remove Property: `delete state.name`
 
-### Redux Cycle with Redux-Thunk middleware
-- Action Creator
-- Action
-- Dispatch
-- `Redux-Thunk middleware`
-- Reducers
-- State
 
-## Project Ahead (List of Blog Posts) - Part 1 out of 2
-
+## Project Ahead (List of Blog Posts) - Part 1 out of 2 FINAL
+Our project ahead is to create a blog posts list with their respective authors.
 
 ### App Goals
 - Fully understand the purpose of **reducers**
@@ -59,6 +59,7 @@ Is a function that gets called with every action we dispatch. It has the ability
 - Axios
 - Redux-Thunk: 
 - Semantic UI: https://semantic-ui.com/ is a modern front-end development framework, powered by LESS and jQuery. It has a sleek, subtle, and flat design look that provides a lightweight user experience.
+- **NEW!** lodash: https://lodash.com/ is a modern JavaScript utility library delivering modularity, performance & extras.
 
 
 ### Usage
@@ -68,3 +69,4 @@ Is a function that gets called with every action we dispatch. It has the ability
 - Axios: `npm i axios`
 - Redux-Thunk: `npm i redux-thunk`
 - Semantic UI: We are going to use a link to a publicly hosted version of the Semantic UI CSS file https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css instead of downloading it. In the /public/index.html we are going to add a "Link" tag. Example: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />`
+- lodash: `npm i lodash` we are going to use https://lodash.com/docs/4.17.15#memoize function.
