@@ -1,7 +1,7 @@
 # Redux Store Design 
 
 ## Summary
-In this section we are going to learn more in depth about reducers and how to make api request.
+In this section we are going to learn more in depth about reducers and how to make some API requests.
 
 
 ### Rules of Reducers
