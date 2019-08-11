@@ -4,6 +4,9 @@ import React from 'react';
 // Import the link component from react-router-dom library
 import { Link } from 'react-router-dom';
 
+// Import our GoogleAuth component
+import GoogleAuth from './GoogleAuth';
+
 const Header = () => {
   return (
     <div className="ui secondary pointing menu">
@@ -14,6 +17,7 @@ const Header = () => {
         <Link to="/" className="item">
           All Streams
         </Link>
+        < GoogleAuth />
       </div>
     </div>
   )
