@@ -3,7 +3,7 @@
 ## Summary
 In this section we are going to use an **Map Array Helper Method** to print out the list of images we found by doing a search. Also, we are going to talk about what is **Key** and why are we supposed to define one whenever we are building a **list of components**.
 
-## Project Ahead (Search & Show) - Part 3 out of 3 (Version 1)
+## Project Ahead (Search & Show) - Part 3 out of 3 FINAL (Version 1)
 We are going to build an app that consists in having a text input (search bar) in the middle of the screen. The user will be able to type some text in the input, then press enter. We're going to do a search or a request to an outside API that is going to find images that matches whatever the user typed. 
 
 ### Tasks:
@@ -41,3 +41,11 @@ We created 3 different components and an Axios API file that we customized for o
   });
 ```
 Lastly, we gave each of our new image element tags a key, so React can identify them faster therefore giving it a little boost on performance. 
+
+
+## How to start?
+  - Run or download files: git clone `URL, Clone with HTTPS` or ***click*** download zip.
+  - Open file in any code editor.
+  - In the terminal: *cd into that folder*
+  - Install all dependencies: `npm install`
+  - Run command to start: `npm start`
