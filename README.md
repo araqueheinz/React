@@ -1,4 +1,4 @@
-# Authentication With React
+# Authentication With React (Twitch TV Mock-Up App)
 
 ## Summary
 In this we are going to learn how to handle authentication in general for any kind of web application and then we are going to focus on how to apply it to our application. There are many [Scopes](https://developers.google.com/identity/protocols/googlescopes) you can ask from Google, but we only care for the email.
@@ -71,10 +71,3 @@ const App = () => {
 - Semantic UI: We are going to use a link to a publicly hosted version of the Semantic UI CSS file https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css instead of downloading it. In the /public/index.html we are going to add a "Link" tag. Example: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />`
 - [Google OAuth](https://console.developers.google.com/apis/credentials/consent?project=twitchtv-mock-up-app&folder&duration=P1D): Create a new App, and then create the OAuth client ID.
 - Google's API Library: Google **DO NOT** offer this library over **NPM**. Instead we are going to add a manual `<script>` tag into our public index.html. Inside the `<head>` tag we are going to add: `<script src="https://apis.google.com/js/api.js"></script>` 
-
-## How to start?
-  - Run or download files: git clone `URL, Clone with HTTPS` or ***click*** download zip.
-  - Open file in any code editor.
-  - In the terminal: *cd into that folder*
-  - Install all dependencies: `npm install`
-  - Run command to start: `npm start`
