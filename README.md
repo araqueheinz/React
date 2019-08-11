@@ -1,4 +1,4 @@
-# React Router
+# React Router (Twitch TV Mock-Up App)
 
 ## Summary
 In this section we are going to learn how to handle navigation in React(**React Router**). We are using a library called `react-router-dom` that it is specifically used to navigate through the application in the browser. We also learned different routers, how they work and why use them.
