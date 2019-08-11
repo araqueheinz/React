@@ -81,3 +81,9 @@ export default connect(mapSateToProps, {
 })(SongList);
 ```
 
+## How to start?
+  - Run or download files: git clone `URL, Clone with HTTPS` or ***click*** download zip.
+  - Open file in any code editor.
+  - In the terminal: *cd into that folder*
+  - Install all dependencies: `npm install`
+  - Run command to start: `npm start`
