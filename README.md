@@ -27,3 +27,11 @@ We are going to have a **Search Bar** on the top of the page. The user is going 
 
 ## Conclusion
 We created a simple YouTube like application like our previous [Search & Show App](https://github.com/araqueheinz/Learning_React/tree/8_List_Records) using YouTube free API. This time we took the liberty to add better style to it learn hot to embed YouTube video using the **iframe** element tag. The app has a default video selection as soon as it starts of 'upcoming ps4 games'.
+
+
+## How to start?
+  - Run or download files: git clone `URL, Clone with HTTPS` or ***click*** download zip.
+  - Open file in any code editor.
+  - In the terminal: *cd into that folder*
+  - Install all dependencies: `npm install`
+  - Run command to start: `npm start`
