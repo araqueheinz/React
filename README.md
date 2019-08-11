@@ -45,6 +45,9 @@ We are going to build a clone of a very popular Application called **Twitch TV**
 - Semantic UI: https://semantic-ui.com/ is a modern front-end development framework, powered by LESS and jQuery. It has a sleek, subtle, and flat design look that provides a lightweight user experience.
 - Google OAuth: OAuth is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub, and DigitalOcean. In this case we are using Google.
 - [Google's API Library](https://developers.google.com/identity/sign-in/web/reference#authentication): An API (application programming interface) is a term meaning the functions/methods in a library that you can call to ask it to do things for you - the interface to the library from Google.
+- Redux
+- React-Redux
+
 
 
 ### Usage
@@ -70,5 +73,7 @@ const App = () => {
 ```
 - Semantic UI: We are going to use a link to a publicly hosted version of the Semantic UI CSS file https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css instead of downloading it. In the /public/index.html we are going to add a "Link" tag. Example: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />`
 - [Google OAuth](https://console.developers.google.com/apis/credentials/consent?project=twitchtv-mock-up-app&folder&duration=P1D): Create a new App, and then create the OAuth client ID.
-- Google's API Library: Google **DO NOT** offer this library over **NPM**. Instead we are going to add a manual `<script>` tag into our public index.html. Inside the `<head>` tag we are going to add: `<script src="https://apis.google.com/js/api.js"></script>` 
+- Google's API Library: Google **DO NOT** offer this library over **NPM**. Instead we are going to add a manual `<script>` tag into our public index.html. Inside the `<head>` tag we are going to add: `<script src="https://apis.google.com/js/api.js"></script>`
+- Redux: `npm i redux`
+- React-Redux: `npm i react-redux`
 
