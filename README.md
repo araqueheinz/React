@@ -34,7 +34,7 @@ The **BAD WAY** mutates the elements of an Array or the properties of an Object,
 - Remove Property: `delete state.name`
 
 
-## Project Ahead (List of Blog Posts) - Part 1 out of 2 FINAL
+## Project Ahead (List of Blog Posts) - Part 2 out of 2 FINAL
 Our project ahead is to create a blog posts list with their respective authors.
 
 ### App Goals
@@ -70,3 +70,10 @@ Our project ahead is to create a blog posts list with their respective authors.
 - Redux-Thunk: `npm i redux-thunk`
 - Semantic UI: We are going to use a link to a publicly hosted version of the Semantic UI CSS file https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css instead of downloading it. In the /public/index.html we are going to add a "Link" tag. Example: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />`
 - lodash: `npm i lodash` we are going to use https://lodash.com/docs/4.17.15#memoize function.
+
+## How to start?
+  - Run or download files: git clone `URL, Clone with HTTPS` or ***click*** download zip.
+  - Open file in any code editor.
+  - In the terminal: *cd into that folder*
+  - Install all dependencies: `npm install`
+  - Run command to start: `npm start`
