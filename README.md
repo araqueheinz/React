@@ -3,7 +3,7 @@
 ## Summary
 In this section we are going to start talking about **Lifecycle Methods** and the reason behind it is that we are going to refactor our code, more specifically our state object. A **Component Lifecycle Method** is function that we can optionally define inside our **Class Based Components**. If decide to implements these methods, they will be called automatically by react during the component's lifecycle.
 
-## Project Ahead (Summer & Winter App) - Part 3 out of 3
+## Project Ahead (Summer & Winter App) - Part 3 out of 3 FINAL
 We are going to build a project to help us better understand the main differences between **Functional Components** and **Class Based Components**. We are also going to learn about **State** and **Life-cycle events** along the way. It is going to be a simple application that is going to detect what season is currently experiencing at the moment.
 
 ### Tasks:
@@ -36,3 +36,9 @@ Another requirement of the class component is that we most define a render metho
 
 We learn how to initialize the state and that we **CAN ONLY** modify or update the state by using the function `setState()`
 
+## How to start?
+  - Run or download files: git clone `URL, Clone with HTTPS` or ***click*** download zip.
+  - Open file in any code editor.
+  - In the terminal: *cd into that folder*
+  - Install all dependencies: `npm install`
+  - Run command to start: `npm start`
