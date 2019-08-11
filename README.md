@@ -1,4 +1,4 @@
-# Intro to Redux 
+# React with Redux
 
 ## Summary
 In this section we are going to learn about **Redux**. First, we started by understanding redux on its own. Then, we learned how it works with React all together.
