@@ -1,28 +1,10 @@
-# Authentication With React (Twitch TV Mock-Up App)
+# Redux Dev Tools (Twitch TV Mock-Up App)
 
 ## Summary
-In this we are going to learn how to handle authentication in general for any kind of web application and then we are going to focus on how to apply it to our application. There are many [Scopes](https://developers.google.com/identity/protocols/googlescopes) you can ask from Google, but we only care for the email.
+In this section we are going to install and learn about **redux-devtools-extension**. The reason behind learning about this dev tools is that in the next section we are going to start working with a library called **redux-form** and things might get complicated because **redux-forms** is not easy to understand.
 
-### OAuth Flow
-- User authenticate with outside service provider (Google, LinkIn, Facebook).
-- User authorizes our app to access their information.
-- Outside provider tells us about the user
-- We are trusting the outside provider to correctly handle identification of a user
-- OAuth can be used for (1) user identification in our app and (2) our pp making actions on behalf of the user.
 
-### OAuth for JS Browser Apps
-- Results in a 'token' that a browser app can use to make requests on behalf of the user
-- Usually used when we have an app that only needs to access user data while they are logged in.
-- Very easy to set up thanks to Google's JS lib to automate flow.
-
-### Steps for setting up OAuth
-- Create a new project at console.developer.google.com/
-- Set up an OAuth confirmation screen
-- Generate an OAuth Client Id
-- Install Google's API library, initialize it with the OAuth Client ID
-- Make sure the lib gets called any time the user clicks on the 'Login with google' button.
-
-## Project Ahead (Twitch TV Clone) - Part 2 out of 
+## Project Ahead (Twitch TV Clone) - Part 3 out of 
 We are going to build a clone of a very popular Application called **Twitch TV**. It is an application that is used by people all over the world to record video on their desktop and stream it live to viewers, so other people can view some streamer inside their browser and see some continuos stream of video. We are going to have multiple pages that the user can visit. They will show different content depending on which screen the user decides to go. 
 
 ### App Goals
@@ -47,8 +29,8 @@ We are going to build a clone of a very popular Application called **Twitch TV**
 - [Google's API Library](https://developers.google.com/identity/sign-in/web/reference#authentication): An API (application programming interface) is a term meaning the functions/methods in a library that you can call to ask it to do things for you - the interface to the library from Google.
 - Redux
 - React-Redux
-
-
+- [Redux-Devtools-Extension](https://github.com/zalmoxisus/redux-devtools-extension)
+- debug-session with redux dev tools
 
 ### Usage
 - React Router: `npm i react-router-dom` Example:
@@ -76,4 +58,16 @@ const App = () => {
 - Google's API Library: Google **DO NOT** offer this library over **NPM**. Instead we are going to add a manual `<script>` tag into our public index.html. Inside the `<head>` tag we are going to add: `<script src="https://apis.google.com/js/api.js"></script>`
 - Redux: `npm i redux`
 - React-Redux: `npm i react-redux`
+- Redux-Devtools-Extension: Install on your browser: [Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/). To add it to my app, example:
+```
+// For redux-devtools-extension
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+// Create store
+const store = createStore(
+  reducers,
+  composeEnhancers(applyMiddleware()),
+);
+```
+- debug-session with redux dev tools: `http://localhost:3000?debug_session=asdf`
+
 
