@@ -71,3 +71,4 @@ const App = () => {
 - Semantic UI: We are going to use a link to a publicly hosted version of the Semantic UI CSS file https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css instead of downloading it. In the /public/index.html we are going to add a "Link" tag. Example: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />`
 - [Google OAuth](https://console.developers.google.com/apis/credentials/consent?project=twitchtv-mock-up-app&folder&duration=P1D): Create a new App, and then create the OAuth client ID.
 - Google's API Library: Google **DO NOT** offer this library over **NPM**. Instead we are going to add a manual `<script>` tag into our public index.html. Inside the `<head>` tag we are going to add: `<script src="https://apis.google.com/js/api.js"></script>` 
+
