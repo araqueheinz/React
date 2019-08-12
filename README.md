@@ -1,10 +1,17 @@
-# Redux Dev Tools (Twitch TV Mock-Up App)
+# Redux Form (Twitch TV Mock-Up App)
 
 ## Summary
-In this section we are going to install and learn about **redux-devtools-extension**. The reason behind learning about this dev tools is that in the next section we are going to start working with a library called **redux-form** and things might get complicated because **redux-forms** is not easy to understand.
+In this section we focused on the **streams/StreamsCreate.js** component. We added 2 simple inputs using **redux-form**. We learned about how the `<Field />` component works and how the **reduxForm** function is used similarly to the connect function(react-redux library). Example:
+```
+  export default reduxForm({
+    form: 'streamCreate',
+    validate: validate,
+  })(StreamCreate);
+```
 
+We also learned about the **validation** functionalities redux-form has included in its library and how to apply them.
 
-## Project Ahead (Twitch TV Clone) - Part 3 out of 
+## Project Ahead (Twitch TV Clone) - Part 4 out of 
 We are going to build a clone of a very popular Application called **Twitch TV**. It is an application that is used by people all over the world to record video on their desktop and stream it live to viewers, so other people can view some streamer inside their browser and see some continuos stream of video. We are going to have multiple pages that the user can visit. They will show different content depending on which screen the user decides to go. 
 
 ### App Goals
@@ -31,6 +38,7 @@ We are going to build a clone of a very popular Application called **Twitch TV**
 - React-Redux
 - [Redux-Devtools-Extension](https://github.com/zalmoxisus/redux-devtools-extension)
 - debug-session with redux dev tools
+- [Redux-Forms](https://redux-form.com/8.2.2/)
 
 ### Usage
 - React Router: `npm i react-router-dom` Example:
@@ -69,5 +77,6 @@ const store = createStore(
 );
 ```
 - debug-session with redux dev tools: `http://localhost:3000?debug_session=asdf`
+- Redux-Forms: As of March 22 2019, the maintainer of Redux Form seems to have accidentally rolled back to an extremely out of date version: https://github.com/erikras/redux-form/releases. To work around this, we need to install a specific version which is the latest known good release: `npm i redux-form@8.1.0`
 
 
