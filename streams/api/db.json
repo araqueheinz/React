@@ -1,0 +1,31 @@
+{
+  "streams": [
+    {
+      "title": "MHW ICEBORNE",
+      "description": "best game ever",
+      "id": 1
+    },
+    {
+      "title": "sushi",
+      "description": "flaming roll",
+      "id": 2
+    },
+    {
+      "title": "Heinz Created this stream",
+      "description": "This is a test to see if this stream was created with my id",
+      "userId": "117090221954164909829",
+      "id": 3
+    },
+    {
+      "title": "Remnant from the ashes (edited)",
+      "description": "Ps4 game comes out august 20",
+      "userId": "117090221954164909829",
+      "id": 4
+    },
+    {
+      "title": "New stream to test (edited)",
+      "description": "This is for testing (edited)",
+      "id": 5
+    }
+  ]
+}

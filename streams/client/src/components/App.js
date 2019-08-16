@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import the BrowserRouter, Route, Link components from 'react-router-dom library
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 
 // Import all of our StreamComponents
 import StreamCreate from './streams/StreamCreate';
@@ -14,22 +14,24 @@ import StreamShow from './streams/StreamShow';
 // Import our Header Component 
 import Header from './Header'
 
+// Import history we are going to maintain the browser history ourselves
+import history from '../history';
 
 
 
 const App = () => {
   return(
     <div className="ui container">
-      <BrowserRouter>
+      <Router history={history}>
         <div>
           <Header />
           <Route path='/' exact component={StreamList} />
           <Route path='/streams/new' exact component={StreamCreate} />
-          <Route path='/streams/edit' exact component={StreamEdit} />
+          <Route path='/streams/edit/:id' exact component={StreamEdit} />
           <Route path='/streams/delete' exact component={StreamDelete} />
           <Route path='/streams/show' exact component={StreamShow} />
         </div>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };

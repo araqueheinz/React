@@ -9,6 +9,9 @@ import { Provider } from 'react-redux';
 // For redux-devtools-extension we need the 
 import { createStore, applyMiddleware, compose } from 'redux';
 
+// Import redux-thunk middleware
+import reduxThunk from 'redux-thunk';
+
 // Import our App component
 import App from './components/App';
 
@@ -21,7 +24,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 // Create store
 const store = createStore(
   reducers,
-  composeEnhancers(applyMiddleware()),
+  composeEnhancers(applyMiddleware(reduxThunk)),
 );
 
 ReactDOM.render(

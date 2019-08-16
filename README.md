@@ -1,15 +1,11 @@
-# Redux Form (Twitch TV Mock-Up App)
+# REST-Based React Apps (Twitch TV Mock-Up App)
 
 ## Summary
-In this section we focused on the **streams/StreamsCreate.js** component. We added 2 simple inputs using **redux-form**. We learned about how the `<Field />` component works and how the **reduxForm** function is used similarly to the connect function(react-redux library). Example:
-```
-  export default reduxForm({
-    form: 'streamCreate',
-    validate: validate,
-  })(StreamCreate);
-```
+In this section we focused on the Create And Edit part of our application. We went in depth on how to incorporate redux-form properly into our application. We also discussed the difference between PATCH and PUT request methods and Programmatic navigation vs browser navigation. 
 
-We also learned about the **validation** functionalities redux-form has included in its library and how to apply them.
+
+### REST conventions
+REpresentational State Transfer, Restful conventions are a predefined system for defining different routes on an API that works with a given type of records.
 
 ## Project Ahead (Twitch TV Clone) - Part 4 out of 
 We are going to build a clone of a very popular Application called **Twitch TV**. It is an application that is used by people all over the world to record video on their desktop and stream it live to viewers, so other people can view some streamer inside their browser and see some continuos stream of video. We are going to have multiple pages that the user can visit. They will show different content depending on which screen the user decides to go. 
@@ -39,6 +35,10 @@ We are going to build a clone of a very popular Application called **Twitch TV**
 - [Redux-Devtools-Extension](https://github.com/zalmoxisus/redux-devtools-extension)
 - debug-session with redux dev tools
 - [Redux-Forms](https://redux-form.com/8.2.2/)
+- [JSON Server](https://www.npmjs.com/package/json-server)
+- Axios
+- Redux Thunk
+- Lodash
 
 ### Usage
 - React Router: `npm i react-router-dom` Example:
@@ -78,5 +78,7 @@ const store = createStore(
 ```
 - debug-session with redux dev tools: `http://localhost:3000?debug_session=asdf`
 - Redux-Forms: As of March 22 2019, the maintainer of Redux Form seems to have accidentally rolled back to an extremely out of date version: https://github.com/erikras/redux-form/releases. To work around this, we need to install a specific version which is the latest known good release: `npm i redux-form@8.1.0`
-
-
+- JSON Server: `npm i json-server`
+- Axios: `npm i axios`
+- Redux Thunk: `npm i redux-thunk`
+- Lodash: `npm i lodash` we are using a function called `mapKeys()` that takes 2 arguments. An array and Id and it returns an object with the id.
