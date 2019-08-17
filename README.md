@@ -1,10 +1,13 @@
-# Using React Portals  (Twitch TV Mock-Up App)
-In this section we are going to learn how to create **MODALS** in React. Some of the new functions and components we learned in this section.
-- ReactDOM.createPortal(){}
-- onClick={e => e.stopPropagation()}
-- `<React.Fragment> </React.Fragment>`
+# Implementing Streaming Video (Twitch TV Mock-Up App)
 
-## Project Ahead (Twitch TV Clone) - Part 5 out of 
+## Summary
+In this section we are going to focus on building the stream video component. Some new things we are going to learn are:
+- Switch component from react-router-dom
+- [RTMP](https://github.com/illuspas/Node-Media-Server)
+- [OBS](https://obsproject.com/)
+- [flv.js](https://www.npmjs.com/package/flv.js)
+
+## Project Ahead (Twitch TV Clone) - Part 6 out of 6 FINAL
 We are going to build a clone of a very popular Application called **Twitch TV**. It is an application that is used by people all over the world to record video on their desktop and stream it live to viewers, so other people can view some streamer inside their browser and see some continuos stream of video. We are going to have multiple pages that the user can visit. They will show different content depending on which screen the user decides to go. 
 
 ### App Goals
@@ -36,6 +39,8 @@ We are going to build a clone of a very popular Application called **Twitch TV**
 - Axios
 - Redux Thunk
 - Lodash
+- Node Media Server
+- [flv.js](https://www.npmjs.com/package/flv.js)
 
 ### Usage
 - React Router: `npm i react-router-dom` Example:
@@ -79,3 +84,5 @@ const store = createStore(
 - Axios: `npm i axios`
 - Redux Thunk: `npm i redux-thunk`
 - Lodash: `npm i lodash` we are using a function called `mapKeys()` that takes 2 arguments. An array and Id and it returns an object with the id.
+- Node-Media-Server: `npm i node-media-server`
+- [flv.js](https://www.npmjs.com/package/flv.js): `npm i flv.js`
