@@ -1,13 +1,10 @@
-# REST-Based React Apps (Twitch TV Mock-Up App)
+# Using React Portals  (Twitch TV Mock-Up App)
+In this section we are going to learn how to create **MODALS** in React. Some of the new functions and components we learned in this section.
+- ReactDOM.createPortal(){}
+- onClick={e => e.stopPropagation()}
+- `<React.Fragment> </React.Fragment>`
 
-## Summary
-In this section we focused on the Create And Edit part of our application. We went in depth on how to incorporate redux-form properly into our application. We also discussed the difference between PATCH and PUT request methods and Programmatic navigation vs browser navigation. 
-
-
-### REST conventions
-REpresentational State Transfer, Restful conventions are a predefined system for defining different routes on an API that works with a given type of records.
-
-## Project Ahead (Twitch TV Clone) - Part 4 out of 
+## Project Ahead (Twitch TV Clone) - Part 5 out of 
 We are going to build a clone of a very popular Application called **Twitch TV**. It is an application that is used by people all over the world to record video on their desktop and stream it live to viewers, so other people can view some streamer inside their browser and see some continuos stream of video. We are going to have multiple pages that the user can visit. They will show different content depending on which screen the user decides to go. 
 
 ### App Goals
