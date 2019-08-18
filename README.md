@@ -4,7 +4,7 @@
 In this section we are going to install and learn about **redux-devtools-extension**. The reason behind learning about this dev tools is that in the next section we are going to start working with a library called **redux-form** and things might get complicated because **redux-forms** is not easy to understand.
 
 
-## Project Ahead (Twitch TV Clone) - Part 3 out of 
+## Project Ahead (Twitch TV Clone) - Part 3 out of 7
 We are going to build a clone of a very popular Application called **Twitch TV**. It is an application that is used by people all over the world to record video on their desktop and stream it live to viewers, so other people can view some streamer inside their browser and see some continuos stream of video. We are going to have multiple pages that the user can visit. They will show different content depending on which screen the user decides to go. 
 
 ### App Goals
