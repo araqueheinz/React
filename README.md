@@ -7,7 +7,7 @@ In this section we focused on the Create And Edit part of our application. We we
 ### REST conventions
 REpresentational State Transfer, Restful conventions are a predefined system for defining different routes on an API that works with a given type of records.
 
-## Project Ahead (Twitch TV Clone) - Part 4 out of 6
+## Project Ahead (Twitch TV Clone) - Part 5 out of 7
 We are going to build a clone of a very popular Application called **Twitch TV**. It is an application that is used by people all over the world to record video on their desktop and stream it live to viewers, so other people can view some streamer inside their browser and see some continuos stream of video. We are going to have multiple pages that the user can visit. They will show different content depending on which screen the user decides to go. 
 
 ### App Goals
