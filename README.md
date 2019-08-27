@@ -1,12 +1,14 @@
-# Context System with React
+# Replacing Redux with Context
 
 ## Summary
+In this section we explore the multiple reasons why *CONTEXT* **CAN'T** replace *REDUX*. Redux distributes data to various components, so does Context, however, Redux can centralize data in a store and provides mechanisms for changing data in the store. Redux has an excellent documentation, well known design patterns and a tremendous amount of open source libraries. Context has no need for an extra library, but it is hard to build a 'store' component with cross cutting concerns.
+
 Key Elements
 - `export default React.createContext()`.
 - `<ColorContext.Provider value="yellow">` ColorContext is the name we gave to this context.
 - `<ColorContext.Consumer>`
 
-## Project Ahead (Translate App) - Part 1 out of 2
+## Project Ahead (Translate App) - Part 2 out of 2 FINAL
 We are going to create a simple change language app to demonstrate how to use context within React.
 
 ### Tasks
