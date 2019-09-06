@@ -1,15 +1,38 @@
-# Hooks with Functional Components
+# More Fun with Hooks
 
 ## Summary
-The **Hook** system is all about borrowing some functionality from **Class Based Components** and adding it to our **Functional Components**. Hooks is going to make sharing logic between different components very easy.
+We are taking one of our old projects and we are refactoring it using **React Hooks**
 
-## Project Ahead (To Do App) - Part 1 out of 1 FINAL
-We are going to create a simple change todo app. This app purpose is to get a better understanding of React Hooks.
+## Project Ahead (Summer & Winter App) - Part 3 out of 3 FINAL
+We are going to build a simple application that is going to detect what season the user is currently experiencing at the moment. Using **React Hooks** we are going to simulate life-cycle methods and refactor class base components to functional components.
+
+### Tasks:
+- Locate the user's physical location.
+- Determine the current month.
+- Change text and styling based on location & month.
 
 ### Tools
-- Axios
-- JSONPlaceholder: https://jsonplaceholder.typicode.com is a fake Online REST API for Testing and Prototyping
+- Semantic UI: https://semantic-ui.com/ is a modern front-end development framework, powered by LESS and jQuery. It has a sleek, subtle, and flat design look that provides a lightweight user experience.
+
+- Geolocation APi: `https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API` allows the user to provide their location to web applications if they so desire. It is built into most modern browsers.
+
 
 ### Usage
-- Axios: `npm i axios`
-- JSONPlaceholder: `/posts`: https://jsonplaceholder.typicode.com/posts & `/todos`: https://jsonplaceholder.typicode.com/todos
+- Semantic UI: We are going to use a link to a publicly hosted version of the Semantic UI CSS file `https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css instead of downloading it. In the /public/index.html` we are going to add a "Link" tag. Example: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />`
+
+- Geolocation APi: 2 callbacks, Success & Error!
+  ```javascript
+   window.navigator.geolocation.getCurrentPosition(
+    (position) => console.log(position), 
+    (err) => console.log(err) 
+  );
+  ```
+## Conclusion
+
+
+## How to start?
+  - Run or download files: git clone `URL, Clone with HTTPS` or ***click*** download zip.
+  - Open file in any code editor.
+  - In the terminal: *cd into that folder*
+  - Install all dependencies: `npm install`
+  - Run command to start: `npm start`
